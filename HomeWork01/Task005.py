@@ -1,4 +1,5 @@
 import math
+import func
 
 coordinates = input("Введите координаты точек через запятую разделив пробелом (x1,y1 x2,y2): ")
 dot_coord = coordinates.split(" ")

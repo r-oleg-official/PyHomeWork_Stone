@@ -1,15 +1,5 @@
 from random import randint
-
-
-def enter_int_number():
-    while True:
-        try:
-            number = int(input("Введите размер списка: "))
-            break
-        except ValueError:
-            print("Требуется ввести целое число")
-    return number
-
+import func
 
 def fill_list(number: int):
     new_list = []
@@ -39,8 +29,8 @@ def print_list(original_list: list, text: str):
     print("\n")
 
 
-number = enter_int_number()
-my_list = fill_list(number)
+number = func.enter_int_number()
+my_list = func.random_fill_list(number)
 print_list(my_list, "Исходный список:")
 mixed_list = mix_list(my_list)
 print_list(mixed_list, "Перемещанный список:")
