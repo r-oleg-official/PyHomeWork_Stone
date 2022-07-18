@@ -1,0 +1,7 @@
+Anna 32455.65
+Kirill 432444.67
+Anton 2345.1
+Sergey 3456.7
+Viktor 21000.0
+Valentin 20001.0
+Semen 34.0
