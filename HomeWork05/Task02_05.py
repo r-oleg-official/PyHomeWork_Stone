@@ -3,7 +3,7 @@ from tkinter import messagebox
 import tkinter as tk
 
 global total_value, new_game_start
-total_value = 280
+total_value = 2021
 new_game_start = False
 
 def player_grab_candies():
