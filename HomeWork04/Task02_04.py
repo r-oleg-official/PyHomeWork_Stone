@@ -1,8 +1,5 @@
 import func
 
 number = func.enter_int_number()
-simple_devs = []
-for dev in range (1, number):
-    if (number%dev == 0) and func.is_simple(dev):
-        simple_devs.append(dev)
+simple_devs = [x for x in range(1,number) if number%x == 0 and func.is_simple(x)]
 print(simple_devs)
