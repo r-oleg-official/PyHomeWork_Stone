@@ -17,7 +17,7 @@ def player_grab_candies():
         elif int(candy_value) > 28:
             game_text['font'] = 'Calibri 10'
             game_text['text'] = 'Не жадничай! Не больше 28, у нас уговор...\n\n'
-            amount_candies_entry.delete(0, 'end')
+            amount_candies_entry.delete(0,  'end')
             return
         elif int(candy_value) > total_value:
             game_text['font'] = 'Calibri 10'
@@ -42,10 +42,10 @@ def cpu_grab_candies():
             cpu_candies = total_value - 29
             while cpu_candies>28:
                 cpu_candies %= 28
-            if cpu_candies == 0: cpu_candies == 28
+            if cpu_candies == 0: cpu_candies = 28
         elif total_value < 29:
             cpu_candies = total_value
-        else: cpu_candies = total_value
+        # else: cpu_candies = total_value
     total_value -= cpu_candies
     if total_value == 0:
         end_game('cpu')
