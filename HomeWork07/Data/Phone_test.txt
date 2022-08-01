@@ -1,1 +1,0 @@
-('STONE Panfilov', 89094512021), ('Oleg Selivanov', 89094449041), ('Anna Panfilova', 89883514535)
