@@ -28,7 +28,6 @@ x = sqr_roots(a, b, c-min_func)
 def change_func(x):
     x_range_down = np.arange(-10, x, 0.01)
     x_range_up = np.arange(x, 10, 0.01)
-
     plt.title(f'Корни функции: {round(sqr_roots(a, b, c)[0], 2)}, {round(sqr_roots(a, b, c)[1], 2)}')
     plt.xlabel('Ось X')
     plt.ylabel('Ось Y')
