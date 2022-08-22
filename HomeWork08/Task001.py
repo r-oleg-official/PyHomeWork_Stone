@@ -7,8 +7,8 @@ a, b, c = 5, 10, -30
 x = np.arange(-10, 10.01, 0.01)
 
 def func(x):
-    func = a*x**2 + b*x + c
-    return func
+    function = a*x**2 + b*x + c
+    return function
 
 def sqr_roots(a, b, c):
     dscrt = b ** 2 - 4 * a * c
@@ -24,6 +24,7 @@ def sqr_roots(a, b, c):
 
 min_func = min(func(x))
 x = sqr_roots(a, b, c-min_func)
+
 
 def change_func(x):
     x_range_down = np.arange(-10, x, 0.01)
